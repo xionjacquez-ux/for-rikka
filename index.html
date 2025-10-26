@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Rikka </title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #B3D9FF;
+      color: #003366;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    #message {
+      max-width: 600px;
+      line-height: 1.8;
+      opacity: 0;
+      transition: opacity 2s ease;
+      white-space: pre-wrap;
+      padding: 0 15px;
+    }
+
+    button {
+      margin-top: 30px;
+      background-color: #003366;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #002244;
+    }
+  </style>
+</head>
+<body>
+  <h2>Hai kamu </h2>
+  <p id="message"></p>
+  <button onclick="showMessage()">Mau baca?</button>
+
+  <script>
+    const text = `haloo, semoga harimu selaluu bikin kamu senyum :D.
+dari awal kenal, aku selalu ngerasa kamu itu orang yang beda.
+cara kamu ngomong, ketawa, bahkan hal kecil kayak gimana kamu respon orang lain tuh selalu tulus.
+banyak hal kecil yang ternyata bikin aku nyaman sama kamu — kayak gimana kamu bisa bikin suasana jadi ringan, gimana kamu tanggepin hal-hal sederhana tapi tetep perhatian.
+aku suka cara kamu ngerespon semua hal, dan entah kenapa dari situ aku jadi pengen terus ada di deket kamu.
+aku tau hal itu gak cuma aku aja yang ngerasain, tapi tiap hari rasanya pengen liat kamu senyum… dan entah kenapa, itu aja udah cukup bikin aku tenang.
+
+aku pengen jujur dikit… ucapan semalem sebenernya bukan cuma buat ulang tahun kamu aja.
+ada perasaan yang udah lama aku simpen, dan kayaknya aku udah gak bisa pura-pura biasa aja lagi.
+aku mau kita lebih dari ini.
+entah kapan tepatnya aku mulai ngerasa aneh sama diri sendiri, bingung sama perasaan sendiri… tapi sekarang aku tau apa yang aku rasain.
+
+aku mau kamu, Rikka.
+bukan biar aku gak kesepian tapi aku mau jadi seseorang yang bisa nemenin kamu jalanin hari, dengerin cerita kamu, dan ada di sisi kamu pas kamu butuh sandaran. karena aku pengen kamu jadi partner aku ke depannya.
+entah apa yang akan aku dapet setelah ngirim text yang mungkin keliatan konyol ini,
+tapi setidaknya, sejauh ini aku udah berusaha buat satu hal: bikin kamu tetep senyum 
+
+aku tau aku masih banyak kurangnya waktu coba buat belajar kamu lebih dalam.
+tapi izinin aku, ya… buat terus belajar kamu, lebih jauh lagi. so do u wanna be my partner?`;
+
+    function showMessage() {
+      const messageEl = document.getElementById("message");
+      messageEl.textContent = text;
+      messageEl.style.opacity = 1;
+    }
+  </script>
+</body>
+</html>
